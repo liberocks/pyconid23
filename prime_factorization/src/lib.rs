@@ -34,12 +34,10 @@ mod tests {
 
     #[test]
     fn it_works() {
-        assert_eq!(prime_factorization(2), vec![2]);
-        assert_eq!(prime_factorization(10), vec![2, 5]);
-        assert_eq!(prime_factorization(29), vec![29]);
-        assert_eq!(
-            prime_factorization(110000),
-            vec![2, 2, 2, 2, 5, 5, 5, 5, 11]
-        );
+        assert_eq!(factorize(2), vec![2]);
+        assert_eq!(factorize(10), vec![2, 5]);
+        assert_eq!(factorize(29), vec![29]);
+        assert_eq!(factorize(110000), vec![2, 2, 2, 2, 5, 5, 5, 5, 11]);
+        assert_eq!(factorize(2147483647), vec![2147483647]);
     }
 }
