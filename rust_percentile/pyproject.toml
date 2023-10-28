@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "prime-factorization"
+name = "rust-percentile"
 version = "0.1.0"
 description = ""
 authors = ["Liberocks"]
@@ -21,3 +21,4 @@ build-backend = "maturin"
 [tool.maturin]
 # "extension-module" tells pyo3 we want to build an extension module (skips linking against libpython.so)
 features = ["pyo3/extension-module"]
+

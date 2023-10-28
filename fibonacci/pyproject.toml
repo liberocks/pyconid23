@@ -2,7 +2,7 @@
 name = "fibonacci"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = ["Liberocks"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
