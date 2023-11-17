@@ -15,9 +15,9 @@ pub fn validate_json(schema_str: &str, data_str: &str) -> bool {
     let data: Value = maybe_data.unwrap();
 
     let compiled = JSONSchema::compile(&schema).unwrap();
-    let result = compiled.is_valid(&data);
+    let res = compiled.is_valid(&data);
 
-    result
+    res
 }
 
 #[pymodule]
